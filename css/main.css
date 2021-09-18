@@ -1,0 +1,25 @@
+/** HOME PAGE **/
+
+.name-title {
+    background-color:  #cd6155 ;
+    color: white;
+    padding: 0;
+    font-size: 3rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.assignment-title {
+    text-decoration: underline;
+}
+
+.site-footer {
+    display: flex;
+    background-color:  #cd6155;
+    color: white;
+    justify-content: center;
+}
+.site-footer a {
+    color: white;
+}

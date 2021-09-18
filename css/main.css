@@ -23,3 +23,9 @@
 .site-footer a {
     color: white;
 }
+
+.image-me {
+    display: flex;
+    margin: 1rem;
+    border-radius: 50%;
+}

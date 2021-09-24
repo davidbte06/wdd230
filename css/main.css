@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
+* {
+    margin: 0;
+    box-sizing: border-box ;
+}
+
 body {
-    font-size: 16pt;
+    font-size: 16px;
+    line-height: 1.5;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
 }
 
 header,
@@ -14,33 +22,39 @@ footer {
 header {
     background-color: #cd6155;
     padding: 1.5rem;
-}
-
-header img {
-    float: right;
+    margin-top: 10px;
 }
 
 header img {
     width: 200px;
     height: auto;
-    border-radius: 50%;
 }
 
 h1 {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     color: white;
     text-align: center;
     font-family: 'Oswald', sans-serif;
 }
 
 h2 {
+    font-size: 1rem;;
     text-decoration: underline;
     font-family: 'Oswald', sans-serif;
 }
+
 
 footer {
     background-color: #cd6155;
     color: white;
     font-size: 14pt;
     padding: 1.5rem;
+}
+
+section p {
+    margin-bottom: 7px;
+}
+
+span {
+    align-items: center;
 }

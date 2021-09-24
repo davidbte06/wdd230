@@ -49,6 +49,11 @@ footer {
     color: white;
     font-size: 14pt;
     padding: 1.5rem;
+    text-align: center;
+}
+
+footer a {
+    color: black;
 }
 
 section p {

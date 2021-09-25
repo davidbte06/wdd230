@@ -30,6 +30,8 @@ h2 {
 p {
     margin-bottom: 0;
     line-height: 1.5;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
 main {
@@ -61,7 +63,7 @@ main h2 {
 
 main a {
     color: #F77F00;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 footer {

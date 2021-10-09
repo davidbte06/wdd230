@@ -1,0 +1,18 @@
+@media only screen and (min-width: 35rem) {
+
+    nav a:hover {
+        color: #FFB703;
+    }
+
+    .heading_preston {
+        font-size: 1.5em;
+    }
+
+    footer {
+        font-size: 1.2em;
+    }
+
+    .contenbox {
+        font-size: 1.2em;
+    }
+}

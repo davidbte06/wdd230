@@ -1,8 +1,11 @@
-.logo {
+body {
+    max-width: 100%;
+}
+
+.logo img {
     max-width: 100%;
     height: auto;
 }
-
 
 header {
     background-color: #8ECAE6;
@@ -13,9 +16,23 @@ header {
     font-family: 'Oswald', sans-serif;
 }
 
+.heading_preston {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading_preston h1 {
+    font-size: 40px;
+    margin: 0 0 0 17px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
 .motto {
     font-family: 'Oswald', sans-serif;
     font-size: 1.3rem;
+    margin-left: 20px;
+    letter-spacing: 1pt;
 }
 
 nav {
@@ -53,7 +70,11 @@ nav ul.main_menu {
     padding: 10px;
 }
 
-.title_preston {
+main p {
+    padding: 10px;
+}
+
+main h2 {
     text-align: center;
     font-family: 'Oswald', sans-serif;
 }

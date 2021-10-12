@@ -62,7 +62,7 @@ main h2 {
 }
 
 main a {
-    color: #D62828;
+    color:black;
     font-size: 1.3rem;
 }
 
@@ -71,5 +71,10 @@ footer {
 }
 
 footer a {
-    color: #D62828;
+    color: white;
+}
+
+footer p {
+    font-size: 1rem;
+    font-weight: lighter;
 }

@@ -19,8 +19,8 @@ function toggleMenu() {
     document.querySelector("#menu").classList.toggle("main_menu");
 }
 
-let thedate = new Date();
-if (5 == 5) {
+let day = new Date();
+if (day.getDay() == 5) {
     document.querySelector('#banner').style.display = 'flex';
 } else {
     document.querySelector('#banner').style.display = 'none';

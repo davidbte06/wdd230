@@ -33,8 +33,7 @@
         font-size: 1.1rem;
     }
 
-    .stats {
-        top: 450px;
-	    right: 1150px;
+    .summary {
+        left: 30%;
     }
 }

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>IDH Weather</title>
+    <meta name="description" content="Preston Town Page project by David Burguete">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo_page">
+        </div>
+
+        <div class="heading_preston">
+            <h1>IDH Wather</h1>
+            <h2 class="motto">Knowledge is power</h2>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()"> &#9776; Menu</button>
+        <ul id="menu" class="main_menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../lesson4/preston-4.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main class="preston-main">
+        <h2>Preston Idaho</h2>
+        <div class="weather_summary">
+            <img src="images/imgSummary.jpg" alt="imgSummary">
+        </div>
+
+        <section class="stats">
+
+            <h2>Weather Summary</h2>
+            <p>Currently: <span>Sunny</span></p>
+            <p>High: <span> 76 °F </span></p>
+            <p>Wind Chill: <span>°F</span></p>
+            <p>Humidity:<span></span> 69% </p>
+            <p>Wind Speed: <span></span> 5 mph </p>
+           </section>
+        </section>
+
+
+
+        <div class="forecast">
+            <h2>5 Day Forecast</h2>
+            <div class="flex">
+                <div class="flex-col">
+                    <span class="col-head">Wed</span>
+                    <img src="images/weather.png" alt="weather_img">
+                    <span class="data">89 °F</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Thu</span>
+                    <img src="images/weather.png" alt="weather_img">
+                    <span class="data">74 °F</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Fri</span>
+                    <img src="images/weather.png" alt="weather_img">
+                    <span class="data">75 °F</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Sat</span>
+                    <img src="images/weather.png" alt="weather_img">
+                    <span class="data">88 °F</span>
+                </div>
+                <div class="flex-col">
+                    <span class="col-head">Sun</span>
+                    <img src="images/weather.png" alt="weather_img">
+                    <span class="data">85 °F</span>
+                </div>
+            </div>
+        </div>
+
+            <article class="article_section">
+                <div class="article">
+                    <img src="images/article_img.jpg" alt="article_img">
+                    <h3>Preston Weather</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure hic repellendus deleniti, sunt
+                        numquam
+                        nesciunt ad facere architecto quos praesentium ducimus quae repellat distinctio nam soluta
+                        voluptatem. Temporibus, sit exercitationem.</p>
+                </div>
+            </article>
+    </main>
+
+    <section class="contact">
+        <div class="preston_map"><img src="images/preston_map.png" alt="preston_map"></div>
+
+        <div class="contact_info">
+            <h3>Contact Information</h3>
+            <p>30 N 1st E</p>
+            <p>Preston, ID 83263</p>
+            <br>
+            <p>999.999.9999</p>
+            <p>idhweathersite@tws.com</p>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="facebook_logo">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="images/twitter.png" alt="twitter_logo">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram.png" alt="instagram_logo">
+            </a>
+        </div>
+
+
+
+
+    </section>
+
+    <footer>
+        <p class="footer-information">&copy; <span id="copyrightyear"></span> IDH Weather | David Burguete |
+            Mexico</p>
+        <p class="updated"><span id="lastupdated"></span></p>
+    </footer>
+
+</body>
+
+</html>

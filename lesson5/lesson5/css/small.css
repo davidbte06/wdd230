@@ -1,0 +1,147 @@
+body {
+    max-width: 100%;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    background-color: #8ECAE6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.heading_preston {
+    display: flex;
+    flex-direction: column;
+}
+
+.heading_preston h1 {
+    font-size: 40px;
+    margin: 0 0 0 17px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.motto {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+    margin-left: 20px;
+    letter-spacing: 1pt;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    padding: 1em;
+    background-color: #023047;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul.main_menu {
+    display: none;
+}
+
+.stats {
+	top: 300px;
+	right: 1000px;
+	background: radial-gradient(#eee, #FFB703 );
+	border: 1px solid #000;
+	padding: 1.5rem;
+	box-shadow: 0 0 30px #000E1B ;
+	opacity: .9;
+}
+
+.stats p {
+    margin: 0;
+}
+
+.preston_main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+main p {
+    padding: 10px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+main h2 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.weather_summary img {
+    max-width: 100%;
+}
+
+.forecast {
+    display: none;
+}
+
+.article_section {
+    display: flex;
+    background-color: #8ECAE6;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.article img {
+    max-width: 25%;
+    border-radius: 5px;
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.article h3 {
+    margin-left: 10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_info {
+    padding: 5%;
+    text-align: center;
+}
+
+.preston_map img {
+    width: 100%;
+}
+
+
+footer {
+    text-align: center;
+    padding: 0.5em;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #023047;
+    color: white;
+}

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>IDH Weather</title>
     <meta name="description" content="Preston Town Page project by David Burguete">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=PT+Sans&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
@@ -44,17 +44,21 @@
         <h2>Preston Idaho</h2>
 
         <section class="preston_cont">
-            <img src="images/imgSummary.jpg" alt="imgSummary">
+            <picture>
+                <source srcset="images/medium.jpeg" media="(min-width: 600px) and (max-width: 899px)">
+                <source srcset="images/large.jpeg" media="(min-width: 900px)">
+                <img src="images/small.jpeg" alt="hero image preston">
+            </picture>
 
 
             <div class="summary">
                 <div class="stats">
                     <h2>Weather Summary</h2>
                     <p>Currently: <span>Sunny</span></p>
-                    <p>High: <span> 76 °F </span></p>
-                    <p>Wind Chill: <span>°F</span></p>
+                    <p>Temperature: <span class="temperature"> 45</span> °F </p>
+                    <p>Wind Chill: <span class="windchill"></span> °F</p>
                     <p>Humidity:<span></span> 69% </p>
-                    <p>Wind Speed: <span></span> 5 mph </p>
+                    <p>Wind Speed: <span class="windspeed">5</span> mph </p>
                 </div>
             </div>
         </section>
@@ -136,6 +140,10 @@
             Mexico</p>
         <p class="updated"><span id="lastupdated"></span></p>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/windchill.js"></script>
 
 </body>
 

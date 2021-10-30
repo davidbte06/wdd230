@@ -8,11 +8,12 @@ h1 {
 
 .navigation .active a {
     background-color: #FFB703;
+    color: black;
 }
 
 .navigation .active a:hover {
     background-color: #FFB703;
-    color: black;
+    color: white;
 }
 /* NAV */
 nav {

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>IDH Weather</title>
+    <meta name="description" content="Preston Town Page project by David Burguete">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo_page">
+        </div>
+
+        <div class="heading_preston">
+            <h1>IDH Wather</h1>
+            <h2 class="motto">Knowledge is power</h2>
+        </div>
+    </header>
+    <nav class="navigation">
+        <button onclick="toggleMenu()"> &#9776; Menu</button>
+        <ul id="menu" class="main_menu">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../lesson6/preston-6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Weather Gallery</h2>
+        <div class="gallery-grid">
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/autumn.jpg" alt="Autumn Road">
+                <figcaption>Autumn Road</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/autumn-trees.jpg" alt="Autumn Trees">
+                <figcaption>Autumn Trees</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/cloudy-forest.jpg" alt="Cloudy Forest">
+                <figcaption>Cloudy Forest</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/forest.jpg" alt="Sunny Forest">
+                <figcaption>Sunny Forest</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/rain.jpg" alt="Raining in the City">
+                <figcaption>Raining in the City</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/snow.jpg" alt="Snowing in the City">
+                <figcaption>Snowing in the City</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/spring.jpg" alt="Spring Trees">
+                <figcaption>Spring Trees</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/sunny-trees.jpg" alt="Sunny Trees">
+                <figcaption>Sunny Trees</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.jpg" data-src="images/sunset-sky.jpg" alt="Sunset Sky">
+                <figcaption>Sunset Sky</figcaption>
+            </figure>
+        </div>
+
+    </main>
+
+    <footer>
+        <p class="footer-information">&copy; <span id="copyrightyear"></span> IDH Weather | David Burguete |
+            Mexico</p>
+        <p class="updated"><span id="lastupdated"></span></p>
+        <p>Days since lastt visit: <span id="last-visited"></span></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+
+</body>
+
+</html>

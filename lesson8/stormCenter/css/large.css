@@ -1,0 +1,61 @@
+@media only screen and (min-width: 60rem) {
+
+    .motto {
+        font-size: 1.5rem;
+        font-family: 'Pt Sans', sans-serif;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav {
+        border-style: solid;
+    }
+
+    nav ul.main_menu {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    .headings h1 {
+		font-size: 3rem;
+	}
+
+	main h2 {
+		font-size: 2rem;
+	}
+
+	main h3 {
+		font-size: 1.6rem;
+	}
+
+	nav {
+		font-size: 1.1rem;
+    }
+
+	main {
+		padding: 0 7%;
+	}
+
+    .form-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

@@ -1,0 +1,19 @@
+@media only screen and (min-width: 32.5rem) {
+    nav a {
+        display: block;
+        padding: 0.75rem;
+    }
+
+    nav a:hover {
+        background-color: #FFB703;
+    }
+
+    .form-grid {
+        grid-template-columns:  1fr 1fr;
+    }
+
+    footer {
+        font-size: 1.2em;
+    }
+
+}

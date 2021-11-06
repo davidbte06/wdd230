@@ -81,6 +81,10 @@ input, select {
     border-radius: 20px;
 }
 
+select {
+    color: black;
+}
+
 #button {
     text-align: center;
 }

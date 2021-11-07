@@ -40,29 +40,30 @@
     <main>
         <h2>Storm Center</h2>
         <form action="thanks.html" method="get" class="form-grid">
-            <div id="user-info">
+            <div class="contact-information">
                 <h3>Contact Information</h3>
-                <fieldset>
-                    <label for="full-name">
+                <fieldset class="user-info">
+                    <label for="full-name"> Full Name
                         <input type="text" name="full-name" id="full-name" required pattern="[A-Za-z]{5,}"
                             placeholder="Full Name">
                     </label>
-                </fieldset>
-                <fieldset>
-                    <label for="phone">
+
+
+                    <label for="phone"> Phone Number
                         <input type="tel" name="phone" id="phone" required placeholder="Phone Number">
-                   </label>
-                </fieldset>
-                <fieldset>
-                    <label for="email">
+                    </label>
+
+
+                    <label for="email"> Email
                         <input type="email" name="email" id="email" placeholder="davidbte@email.com">
                     </label>
-                </fieldset>
-                <fieldset>
-                    <label for="zip">
+
+
+                    <label for="zip"> Zip Code
                         <input type="number" name="zip" id="zip" required placeholder="Zip Code">
                     </label>
                 </fieldset>
+
                 <fieldset>
                     <legend>Are you in danger?</legend>
                     <div class="radio-selecion">
@@ -82,6 +83,7 @@
                     </div>
                 </fieldset>
             </div>
+
             <div id="storm-info">
                 <h3>Storm Information</h3>
                 <fieldset>

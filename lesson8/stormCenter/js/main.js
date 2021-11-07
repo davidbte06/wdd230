@@ -25,10 +25,10 @@ function toggleRating(rating) {
 }
 
 
-//Region Response
-function selectResponse() {
-	const s = document.querySelector('#selected')
-	const sel = document.querySelector('#storm-region');
-	s.style.display = "block";
-	s.textContent = sel.value;
-}
+// //Region Response
+// function selectResponse() {
+// 	const s = document.querySelector('#selected')
+// 	const sel = document.querySelector('#storm-region');
+// 	s.style.display = "block";
+// 	s.textContent = sel.value;
+// }

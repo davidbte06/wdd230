@@ -28,12 +28,12 @@
     <nav class="navigation">
         <button onclick="toggleMenu()"> &#9776; Menu</button>
         <ul id="menu" class="main_menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../lesson4/preston-4.html">Preston</a></li>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../lesson4/preston-4.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li class="active"><a href="stormcenter.html">Storm Center</a></li>
-            <li><a href="#">Gallery</a></li>
+            <li><a href="../../lesson7/lesson7/gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
 
@@ -41,8 +41,8 @@
         <h2>Storm Center</h2>
         <form action="thanks.html" method="get" class="form-grid">
             <div class="contact-information">
-                <h3>Contact Information</h3>
                 <fieldset class="user-info">
+                    <legend>Contact Information</legend>
                     <label for="full-name"> Full Name
                         <input type="text" name="full-name" id="full-name" required pattern="[A-Za-z]{5,}"
                             placeholder="Full Name">
@@ -85,13 +85,13 @@
             </div>
 
             <div id="storm-info">
-                <h3>Storm Information</h3>
-                <fieldset>
+                <fieldset class="block-2">
+                    <legend>Storm Information</legend>
                     <label for="storm-date">Storm Date
                         <input type="date" name="storm-date" id="storm-date">
                     </label>
-                </fieldset>
-                <fieldset>
+
+
                     <label for="region-list">
                         <select id="region-list" name="storm-region" onchange="selectResponse()">
                             <option value="" disabled selected>Select Storm Region</option>
@@ -100,8 +100,8 @@
                             <option value="Fish Haven">Fish Haven</option>
                         </select>
                     </label>
-                </fieldset>
-                <fieldset>
+
+
                     <label for="storm-type">
                         <input list="storm-list" name="storm-type" id="storm-type" placeholder="Select Storm Type">
                     </label>
@@ -112,8 +112,8 @@
                         <option value="Thunderstorm">
                         <option value="Tornado">
                     </datalist>
-                </fieldset>
-                <fieldset>
+
+
                     <label class="flexly" for="storm-severity">Storm Severity: <span id="value">5</span> &#160;&#160;
                         <input type="range" name="storm-severity" id="storm-severity" value="5" min="1" max="10"
                             step="1" list="ranges" oninput="toggleRating(this.value)"
@@ -133,9 +133,10 @@
                     </datalist>
                 </fieldset>
             </div>
+
             <div id="additional-info">
-                <h3>Additional Information</h3>
                 <fieldset id="full-area">
+                    <legend>Additional Information</legend>
                     <label for="comments">Comments
                         <textarea name="comments" id="comments" rows="8"></textarea>
                     </label>

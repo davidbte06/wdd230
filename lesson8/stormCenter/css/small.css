@@ -4,7 +4,8 @@
 }
 
 
-h1, h2 {
+h1,
+h2 {
     font-family: 'Oswald', sans-serif;
 }
 
@@ -75,13 +76,14 @@ main {
 }
 
 
-.user-info{
+.user-info {
     display: grid;
     gap: 15px;
     grid-template-columns: 1fr 1fr;
 }
 
-input, select {
+input,
+select {
     border: none;
     color: #969590;
     outline: none;
@@ -127,6 +129,11 @@ textarea {
 
 .form-grid h3 {
     text-align: left;
+}
+
+.block-2{
+    display: grid;
+    gap: 20px;
 }
 
 footer {

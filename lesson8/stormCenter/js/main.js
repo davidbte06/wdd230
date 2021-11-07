@@ -23,12 +23,3 @@ function toggleMenu() {
 function toggleRating(rating) {
     document.getElementById("value").innerHTML = rating;
 }
-
-
-// //Region Response
-// function selectResponse() {
-// 	const s = document.querySelector('#selected')
-// 	const sel = document.querySelector('#storm-region');
-// 	s.style.display = "block";
-// 	s.textContent = sel.value;
-// }

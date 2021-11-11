@@ -3,6 +3,9 @@
     height: auto;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 h1,
 h2 {
@@ -58,51 +61,73 @@ nav ul.main_menu {
     color: white;
 }
 
-main {
-    margin-bottom: 2rem;
+.title-storm {
     text-align: center;
 }
 
-.form-grid {
-    display: grid;
-    grid-gap: 0.75rem;
-    background-color: #8ECAE6;
-    box-shadow: 0 2.5px 10px 2.5px #00000066;
-    color: black;
-    font-family: "Oswald", sans-serif;
-    padding: 1rem;
+main {
+    width: min(90%, 50em);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     text-align: left;
-    border-radius: 20px;
-}
-
-
-.user-info {
-    display: grid;
-    gap: 15px;
-    grid-template-columns: 1fr 1fr;
-}
-
-input,
-select {
-    border: none;
-    color: #969590;
-    outline: none;
-    padding: 0.5rem;
-    border-radius: 0.3rem;
+    border-radius: 1em;
 }
 
 select {
     color: black;
+}
+
+form legend {
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    font-family: 'PT Sans', sans-serif;
+    color: black;
+}
+
+form fieldset {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.box,
+fieldset div {
+    display: block;
+    margin-top: 1.5rem;
+}
+
+.box input,
+textarea,
+select {
+    display: block;
+    border: 1px solid gray;
+    border-radius: 0.3rem;
+    padding: 1rem;
+    width: 100%;
 }
 
 legend {
-    font-family: 'Oswald', sans-serif;
-font-weight: bold;
-font-size: 1.5rem;
-margin-bottom: 1rem;
+    font-weight: bolder;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
 }
 
-#button {
+.contact-info,.storm-info, .additional-info {
+    background-color: #8ECAE6;
+}
+
+.danger-level {
+    margin-bottom: 15px;
+}
+
+* #button {
     text-align: center;
 }
 
@@ -112,15 +137,8 @@ margin-bottom: 1rem;
     color: black;
     font-weight: bold;
     padding: 10px 30px;
-}
-
-::placeholder {
-    opacity: 80%;
-}
-
-fieldset {
-    border: none;
-    margin: 0.5rem 0;
+    margin: 1.5rem 0 1.5rem 0;
+    font-family: 'Oswald', sans-serif
 }
 
 textarea {
@@ -129,18 +147,8 @@ textarea {
     border-radius: 20px;
 }
 
-#storm-severity {
-    border: none;
-    display: block;
-}
-
 .form-grid h3 {
     text-align: left;
-}
-
-.block-2{
-    display: grid;
-    gap: 20px;
 }
 
 footer {

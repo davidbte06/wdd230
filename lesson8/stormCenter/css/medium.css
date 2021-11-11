@@ -8,10 +8,6 @@
         background-color: #FFB703;
     }
 
-    .form-grid {
-        grid-template-columns:  1fr 1fr;
-    }
-
     footer {
         font-size: 1.2em;
     }

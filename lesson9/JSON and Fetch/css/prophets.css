@@ -1,0 +1,52 @@
+body {
+    background: #121f3d;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+h1, h2 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    text-align: center;
+}
+
+section {
+    background-color: #fff4d7;
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    padding:  1rem;
+    color: black;
+    border-radius: 20px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+footer {
+    margin: 1rem;
+    background-color: #fff4d7;
+    color: black;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 25px 0 0 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media only screen and (min-width: 45rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 60rem) {
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

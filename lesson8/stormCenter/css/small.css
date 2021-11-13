@@ -158,3 +158,10 @@ footer {
     background-color: #023047;
     color: white;
 }
+
+.thanks-message {
+    align-self: center;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    padding: 50px;
+}

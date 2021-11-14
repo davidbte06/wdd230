@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+}
+main {
+    text-align: center;
+}
+
+img {
+    border: 1px solid black;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 0.5em;
+    font-family: 'PT Sans', sans-serif;
+    background-color: #023047;
+    color: white;
+}

@@ -21,7 +21,7 @@ fetch(requestURL)
         let rain = document.createElement('h4');
 
         image.setAttribute('src', `images/${xtown.photo}`);
-        image.setAttribute('alt', `${xtown.name} landscape image`);
+        image.setAttribute('alt', `${xtown.name} landscape `);
         div.className = 'town-info';
         name.textContent = `${xtown.name}`;
         motto.textContent = `${xtown.motto}`;

@@ -17,11 +17,11 @@ fetch(requestURL)
         let name = document.createElement('h3');
         let motto = document.createElement('h4');
         let year = document.createElement('h4');
-        let pop = document.createElement('p');
-        let rain = document.createElement('p');
+        let pop = document.createElement('h4');
+        let rain = document.createElement('h4');
 
         image.setAttribute('src', `images/${xtown.photo}`);
-        image.setAttribute('alt', `${xtown.name} - image`);
+        image.setAttribute('alt', `${xtown.name}`);
         div.className = 'town-info';
         name.textContent = `${xtown.name}`;
         motto.textContent = `${xtown.motto}`;

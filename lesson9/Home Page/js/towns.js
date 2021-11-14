@@ -15,7 +15,7 @@ fetch(requestURL)
         let div = document.createElement('div');
         let image = document.createElement('img');
         let name = document.createElement('h3');
-        let motto = document.createElement('p');
+        let motto = document.createElement('h4');
         let year = document.createElement('p');
         let pop = document.createElement('p');
         let rain = document.createElement('p');

@@ -59,8 +59,10 @@
       }
 
     .town-data section{
+        display: block;
         border:1px solid #bbb;
         padding: 0;
+
     }
 
     .town-data section h3{
@@ -90,4 +92,8 @@
         height: auto;
         margin-top: 0;
       }
+
+    .contact {
+        width: 960px;
+    }
 }

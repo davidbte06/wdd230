@@ -22,6 +22,47 @@
         margin: 0 auto;
     }
 
+    /* TOWN INFO */
+    .town-data {
+        padding: 30px 30px;
+
+    }
+
+    .town-data section {
+        border: 1px solid #bbb;
+        padding: 0 0 20px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .town-data section:nth-child(odd) img {
+        grid-column: 2;
+    }
+
+    .town-data section:nth-child(odd) .town-info {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .town-data img {
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .town-info h3 {
+        font-size: 22px;
+    }
+
+    .town-data section p:first-of-type {
+        font-style: italic;
+        line-height: 25px;
+        margin-top: 5px;
+        color: #056a7c;
+        font-size: 18px;
+    }
+
     /* Contact */
 
     .contact {
@@ -34,7 +75,6 @@
         grid-gap: 2px;
         background-color: #8ECAE6;
         margin-top: 15px;
-        width: 960px;
         margin: 0 auto;
         box-shadow: 0 2.5px 10px 2.5px #00000066;
         border-radius: 1.3rem;

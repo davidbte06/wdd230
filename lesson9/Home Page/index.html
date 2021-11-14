@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script defer src="js/main.js"></script>
+    <script defer src="js/towns.js"></script>
 </head>
 
 <body>
@@ -38,15 +39,76 @@
     </nav>
 
     <main>
-        <h2 class="title">Home</h2>
+        <h2 class="title">Welcome to IDH Weather</h2>
+
+        <picture>
+            <source media="(min-width: 1008px)" srcset="images/large.jpg">
+            <source media="(min-width: 641px and (max-width: 1007px))" srcset="images/medium.jpg">
+            <img src="images/small.jpg" alt="map of idaho">
+        </picture>
+
+        <div class="town-data"></div>
+
+        <div class="article">
+            <h3>Know the Weather in Idaho</h3>
+            <p class="p-article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam praesentium, reiciendis aut vitae
+                nemo architecto nesciunt porro. Cum in, beatae asperiores atque repellendus id eveniet accusamus ipsum
+                consequuntur necessitatibus nostrum!
+                Accusamus sit quos totam reprehenderit perferendis pariatur veritatis, optio vel ut id placeat omnis qui
+                quo. Doloribus alias deserunt laudantium accusamus earum perferendis, repellendus porro non, nulla magni
+                natus quas!
+                Non ipsa ea minima. Distinctio amet quos porro, unde veniam repellendus fugit, nam eveniet id soluta
+                labore fuga nostrum omnis voluptatibus, optio qui consequuntur sit. Labore a voluptates accusamus
+                dolore?
+                Odio enim consectetur quibusdam exercitationem provident, aspernatur facilis qui amet obcaecati nesciunt
+                minima neque ex temporibus quod saepe iusto, id ratione illo aliquid harum quaerat maxime maiores
+                inventore. Sunt, debitis?
+                Provident similique delectus incidunt iure ad, cum qui, in rem illum nisi odio perferendis non vel quia
+                exercitationem totam. Voluptatibus, quia totam qui alias dicta aliquam ipsum voluptates eaque.
+                Architecto!
+            </p>
+        </div>
     </main>
+
+    <section class="contact">
+        <div class="preston_map"><img src="images/preston_map.png" alt="preston_map"></div>
+
+        <div class="contact_info">
+            <h3>Contact Information</h3>
+            <p>30 N 1st E</p>
+            <p>Preston, ID 83263</p>
+            <br>
+            <p>999.999.9999</p>
+            <p>idhweathersite@tws.com</p>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="facebook_logo">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="images/twitter.png" alt="twitter_logo">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram.png" alt="instagram_logo">
+            </a>
+        </div>
+    </section>
 
     <footer>
         <p class="footer-information">&copy; <span id="copyrightyear"></span> IDH Weather | David Burguete |
             Mexico</p>
         <p class="updated"><span id="lastupdated"></span></p>
     </footer>
-    <script src="js/webfoantload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Oswald',
+                    'PT Sans'
+                ]
+            }
+        });
+    </script>
 </body>
 
 </html>

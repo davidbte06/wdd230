@@ -18,3 +18,4 @@ function toggleMenu() {
 
     document.querySelector("#menu").classList.toggle("main_menu");
 }
+

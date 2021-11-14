@@ -54,15 +54,40 @@
 		padding: 0 7%;
 	}
 
-	.gallery-grid {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
+	.town-data {
+        padding: 25px 25px;
+      }
 
-	.gallery-grid figure {
-		font-style: italic;
-	}
+    .town-data section{
+        border:1px solid #bbb;
+        padding: 0;
+    }
 
-	.gallery-grid figure:hover {
-		box-shadow: 0 5px 15px 5px #00000066;
-	}
+    .town-data section h3{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .town-data section p{
+        font-size: 18px;
+    }
+
+    .town-data section p:first-of-type {
+        font-style: italic;
+        line-height: 20px;
+        margin-top: 10px;
+        font-size: 17px;
+    }
+
+    .town-data{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .town-data section img {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        max-width: 100%;
+        height: auto;
+        margin-top: 0;
+      }
 }

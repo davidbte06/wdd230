@@ -15,6 +15,7 @@ h1 {
     background-color: #FFB703;
     color: white;
 }
+
 /* NAV */
 nav {
     text-align: center;
@@ -61,10 +62,81 @@ header {
 }
 
 /* MAIN */
+
 .title {
     font-family: 'Oswald', sans-serif;
     text-align: center;
 }
+
+.town-data {
+    background-color: #023047;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.town-data section {
+    background-color: #8ECAE6;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.town-data {
+    display: grid;
+    box-shadow: 0 2.5px 10px 2.5px #00000066;
+    border-radius: 1.3rem;
+    margin-top: 52px
+}
+
+.town-data section:nth-child(1) {
+    order: 2;
+}
+
+.town-data section:nth-child(2) {
+    order: 3;
+}
+
+.town-data section:nth-child(3) {
+    order: 1;
+}
+
+.town-data section h3 {
+    margin-bottom: 0;
+    color: black;
+}
+
+.town-data section p:first-of-type {
+    font-style: italic;
+    line-height: 25px;
+    margin-top: 5px;
+    color: black;
+}
+
+.town-data section img {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.p-article {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_info {
+    padding: 5%;
+    text-align: center;
+}
+
+.preston_map img {
+    width: 100%;
+}
+
 
 /* FOOTER */
 footer {

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>IDH Weather | Storm Center</title>
+    <meta name="description" content="Storm Center page">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/forecast.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo_page">
+        </div>
+
+        <div class="heading_preston">
+            <h1>IDH Weather</h1>
+            <h2 class="motto">Knowledge is power</h2>
+        </div>
+    </header>
+    <nav class="navigation">
+        <button onclick="toggleMenu()"> &#9776; Menu</button>
+        <ul id="menu" class="main_menu">
+            <li><a href="../lesson9/Home Page/index.html">Home</a></li>
+            <li class="active"><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="../lesson8/stormCenter/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson7/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston, Idaho</h2>
+        <div class="hero-image">
+            <picture>
+                <source media="(min-width: 641px) and (max-width: 1007px)" srcset="images/medium.jpeg">
+                <source media="(min-width: 1008px)" srcset="images/large.jpeg">
+                <img src="images/small.jpeg" alt="sunset sky">
+            </picture>
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <p class="label">Currently:</p>
+                <p class="value"><span id="description"></span> <span id="current"></span> &deg;F</p>
+                <p class="label">High:</p>
+                <p class="value"><span id="high"></span> &deg;F</p>
+                <p class="label">Wind Chill:</p>
+                <p class="value"><span id="wind"></span></p>
+                <p class="label">Humidity:</p>
+                <p class="value"><span id="humidity"></span>%</p>
+                <p class="label">Wind Speed:</p>
+                <p class="value"><span id="speed"></span> mph</p>
+            </section>
+        </div>
+
+        <h2>5-Day Forecast<br><span id="subtitle">(every 6pm)</span></h2>
+        <div id="forecast">
+            <div class="days">
+                <p class="weekday" id="day1"></p>
+                <p class="icon"><img src="" alt="" id="img1"></p>
+                <p class="current-temp"><span id="day1Temp"></span> &deg;F</p>
+            </div>
+            <div class="days">
+                <p class="weekday" id="day2"></p>
+                <p class="icon"> <img src="" alt="" id="img2"></p>
+                <p class="current-temp"><span id="day2Temp"></span> &deg;F</p>
+            </div>
+            <div class="days">
+                <p class="weekday" id="day3"></p>
+                <p class="icon"> <img src="" alt="" id="img3"></p>
+                <p class="current-temp"><span id="day3Temp"></span> &deg;F</p>
+            </div>
+            <div class="days">
+                <p class="weekday" id="day4"></p>
+                <p class="icon"><img src="" alt="" id="img4"></p>
+                <p class="current-temp"><span id="day4Temp"></span> &deg;F</p>
+            </div>
+            <div class="days">
+                <p class="weekday" id="day5"></p>
+                <p class="icon"><img src="" alt="" id="img5"></p>
+                <p class="current-temp"><span id="day5Temp"></span> &deg;F</p>
+            </div>
+        </div>
+
+        <article class="preston-article">
+            <h3>15 Best Things to Do in Preston</h3>
+            <img src="images/article.jpg" alt="Pioneer Historic Byway">
+            <p>In Southeastern Idaho’s Cache Valley, Preston is a rural town with astounding mountain scenery on its
+                doorstep. </p>
+
+            <p>On the eastern flank are the Bear River Mountains, and in a few minutes flat you can be fishing at a
+                crystal clear lake or hiking in an alpine meadow. </p>
+
+            <p>IFranklin, Idaho’s oldest European settlement is on Preston’s outskirts and is a starting point for an
+                historic byway, connecting a long chain of sites relating to the region’s Native American past, pioneer
+                days and the Oregon Trail, which passed by the Cache Valley to the north.</p>
+
+            <p>As the Franklin County Seat, Preston hosts some major events at the fairground on the west side of town,
+                and none are bigger than That Famous Preston Night Rodeo, which is celebrated with three days of
+                carnival amusements and parades.</p>
+
+            <ul>
+                <li>Pioneer Historic Byway</li>
+                <li>Bear River Massacre Site</li>
+                <li>Napoleon Dynamite Filming Locations</li>
+                <li>Preston Park</li>
+                <li>Franklin Relic Hall</li>
+                <li>Glendale Reservoir</li>
+                <li>Oneida Narrows Reservoir</li>
+                <li>Oneida Stake Academy</li>
+                <li>Willow Flat Springs Trail</li>
+                <li>Preston Golf and Country Club</li>
+                <li>Bear Lake</li>
+                <li>That Famous Preston Night Rodeo</li>
+                <li>Franklin County Fair</li>
+                <li>Festival of Lights</li>
+                <li>National Oregon/California Trail Center</li>
+            </ul>
+
+            <p class="source">
+                Source:
+                <a href="https://www.thecrazytourist.com/15-best-things-to-do-in-preston-idaho/" target="alt_blank">thecrazytourist</a>
+            </p>
+
+        </article>
+
+
+    </main>
+
+    <section class="contact">
+        <div class="preston_map"><img src="images/preston_map.png" alt="preston_map"></div>
+
+        <div class="contact_info">
+            <h3>Contact Information</h3>
+            <p>30 N 1st E</p>
+            <p>Preston, ID 83263</p>
+            <br>
+            <p>999.999.9999</p>
+            <p>idhweathersite@tws.com</p>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="facebook_logo">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="images/twitter.png" alt="twitter_logo">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram.png" alt="instagram_logo">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-information">&copy; <span id="copyrightyear"></span> IDH Weather | David Burguete |
+            Mexico</p>
+        <p class="updated"><span id="lastupdated"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Oswald',
+                    'PT Sans'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

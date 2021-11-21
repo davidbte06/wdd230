@@ -28,15 +28,14 @@
     }
 
     .weather-summary {
-        position: absolute;
-        top: 15px;
-        left: 30px;
-        font-size: 17px;
-    }
+		top: 25px;
+		left: 25px;
+		position: absolute;
+		opacity: 0.85;
+		padding-bottom: 1rem;
+		box-shadow: 0 2.5px 10px 2.5px #00000066;
+	}
 
-    .weather-summary h3 {
-        font-size: 20px;
-    }
 
     .preston-article img {
         float: right;

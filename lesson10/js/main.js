@@ -2,10 +2,10 @@
 const date = new Date(Date.now())
 
 const options = {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
+  weekday: 'long',
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
 };
 
 document.querySelector('#lastupdated').textContent = date.toLocaleDateString('en-Us', options);
@@ -16,39 +16,33 @@ document.querySelector('#copyrightyear').textContent = new Date().getFullYear();
 // Navegation Bar
 function toggleMenu() {
 
-    document.querySelector("#menu").classList.toggle("main_menu");
+  document.querySelector("#menu").classList.toggle("main_menu");
 }
 
-// Weather Summary
+// region Preston Weather Summary API
+const weatherapiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=c3affef608fbd43350f108a8f72cddac';
 
-var apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=acc0c305e326e6d9f1226a549bc67124';
+fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
 
-fetch(apiURL)
-  .then((response) => response.json())
-  .then((jsObject) => {
+  const temperature = document.querySelector('.temperature');
+  t = jsonObject.main.temp;
+  temperature.textContent = t;
 
-    document.getElementById('current').textContent = jsObject.main.temp.toFixed(1);
-    document.getElementById('description').textContent = jsObject.weather[0].description;
-    document.getElementById('description').style.textTransform = "capitalize";
-    document.getElementById('high').textContent = jsObject.main.temp_max.toFixed(1);
-    document.getElementById('humidity').textContent = jsObject.main.humidity;
-    document.getElementById('speed').textContent = jsObject.wind.speed;
-  });
+  const currently = document.querySelector('.currently');
+  currently.textContent = jsonObject.weather[0].description;
 
+  const windspeed = document.querySelector('.windspeed');
+  w = jsonObject.wind.speed;
+  windspeed.textContent = w;
 
-// Windchill
+  const humidity = document.querySelector('.humidity');
+  humidity.textContent = jsonObject.main.humidity;
 
-let temp = parseFloat(document.querySelector('#current').textContent);
-let speed = parseFloat(document.querySelector('#speed').textContent);
+  let windchill_factor = 'N/A';
 
-let windchill;
-if (temp <= 50 && speed > 3) {
-    f = 35.74 + (0.6215 * temp) - (35.75 * (speed ** 0.16))+ (0.4275 * temp * (speed ** 0.16));
-    windchill = `${f.toFixed(0)} \u00B0F`;
-}
-else {
-    windchill = 'N/A';
-}
+  if ((t <= 50) && (w > 3)) {
+    windchill_factor = `${Math.round(35.74 + (0.6215 * t) - (35.75 * Math.pow(w, 0.16)) + ((0.4275 * t) * Math.pow(w, 0.16)))}&#176;F`;
+  }
 
-document.querySelector('#wind').textContent = windchill;
-
+  document.querySelector('.windchill').innerHTML = windchill_factor;
+});

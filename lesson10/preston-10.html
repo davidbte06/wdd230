@@ -48,16 +48,18 @@
             </picture>
             <section class="weather-summary">
                 <h3>Weather Summary</h3>
-                <p class="label">Currently:</p>
-                <p class="value"><span id="description"></span> <span id="current"></span> &deg;F</p>
-                <p class="label">High:</p>
-                <p class="value"><span id="high"></span> &deg;F</p>
-                <p class="label">Wind Chill:</p>
-                <p class="value"><span id="wind"></span></p>
-                <p class="label">Humidity:</p>
-                <p class="value"><span id="humidity"></span>%</p>
-                <p class="label">Wind Speed:</p>
-                <p class="value"><span id="speed"></span> mph</p>
+                <div class="weather-summary-grid">
+                    <span class="label">Currently: </span>
+                    <span class="currently">Partly Cloudy</span>
+                    <span class="label">Temperature: </span>
+                    <div><span class="temperature"></span>&#176;F</div>
+                    <span class="label">Wind Chill: </span>
+                    <div><span class="windchill"></span></div>
+                    <span class="label">Humidity: </span>
+                    <div><span class="humidity"></span>%</div>
+                    <span class="label">Wind Speed: </span>
+                    <div><span class="windspeed"></span> mph</div>
+                </div>
             </section>
         </div>
 

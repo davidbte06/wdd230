@@ -35,40 +35,30 @@
     }
 
     .headings h1 {
-		font-size: 3rem;
-	}
-
-	main h2 {
-		font-size: 2rem;
-	}
-
-	main h3 {
-		font-size: 1.6rem;
-	}
-
-	nav {
-		font-size: 1.1rem;
+        font-size: 3rem;
     }
 
-	main {
-		padding: 0 7%;
-	}
+    main h2 {
+        font-size: 2rem;
+    }
 
-    .main-image{
-		position: relative;
+    main h3 {
+        font-size: 1.6rem;
+    }
 
-	  }
+    nav {
+        font-size: 1.1rem;
+    }
 
-	  .weather-summary {
-	   position: absolute;
-	   top: 15px;
-	   left: 30px;
-	   font-size: 17px;
-	 }
+    main {
+        padding: 0 7%;
+    }
 
-	 .weather-summary h3 {
-	   font-size: 20px;
-	 }
+    .main-image {
+        position: relative;
+
+    }
+
 
     .contact {
         width: 960px;

@@ -1,0 +1,98 @@
+@media only screen and (min-width: 60rem) {
+
+    .motto {
+        font-size: 1.5rem;
+        font-family: 'Pt Sans', sans-serif;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav {
+        border-style: solid;
+    }
+
+    nav ul.main_menu {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    .headings h1 {
+		font-size: 3rem;
+	}
+
+	main h2 {
+		font-size: 2rem;
+	}
+
+	main h3 {
+		font-size: 1.6rem;
+	}
+
+	nav {
+		font-size: 1.1rem;
+    }
+
+	main {
+		padding: 0 7%;
+	}
+
+	.town-data {
+        padding: 25px 25px;
+      }
+
+    .town-data section{
+        display: block;
+        padding: 0;
+
+    }
+
+    .town-data section h3{
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .town-data section p{
+        font-size: 18px;
+    }
+
+    .town-data section p:first-of-type {
+        font-style: italic;
+        line-height: 20px;
+        margin-top: 10px;
+        font-size: 17px;
+    }
+
+    .town-data{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .town-data section img {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        max-width: 100%;
+        height: auto;
+        margin-top: 0;
+      }
+
+    .contact {
+        width: 960px;
+    }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>IDH Weather | Storm Center</title>
+    <meta name="description" content="Storm Center page">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/towns.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo_page">
+        </div>
+
+        <div class="heading_preston">
+            <h1>IDH Weather</h1>
+            <h2 class="motto">Knowledge is power</h2>
+        </div>
+    </header>
+    <nav class="navigation">
+        <button onclick="toggleMenu()"> &#9776; Menu</button>
+        <ul id="menu" class="main_menu">
+            <li class="active"><a href="../../index.html">Home</a></li>
+            <li><a href="../../lesson4/preston-4.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="../../lesson7/lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="title">Welcome to IDH Weather</h2>
+
+        <picture>
+            <source srcset="images/medium.jpg" media="(min-width: 600px) and (max-width: 899px)">
+            <source srcset="images/large.jpg" media="(min-width: 900px)">
+            <img src="images/small.jpg" alt="map of idaho">
+        </picture>
+
+        <div class="town-data"></div>
+
+        <article class="preston-article">
+            <h3>Climate of Idaho</h3>
+            <img src="images/home-article.jpg" alt="person reading a megazine">
+            <p>Idaho’s mountainous topography produces an extremely diverse climate pattern. In general, as elevation
+                increases, precipitation increases and mean temperatures drop. On a different scale, the high mountains
+                in eastern Idaho tend to hold back the cold winter air that predominates in Montana and Wyoming, giving
+                the state higher mean temperatures than are found at the same latitude and elevation in those states and
+                in more mid-continental locations. Mean January temperatures range from the upper 10s F (about −8 °C) at
+                Deadwood Dam in the central mountains to the low 30s F (about −1 °C) at Orofino in the central
+                panhandle. July temperatures range from about 60 °F (16 °C) at Deadwood Dam to the upper 70s F (about 25
+                °C) at Grand View in the southwest.</p>
+
+            <p>Idaho is situated in the rain shadow of mountains to the west in Washington and Oregon, and only the
+                higher elevations receive adequate amounts of precipitation. Most of the Snake River plateau receives
+                less than 10 inches (250 mm) of precipitation annually, making it the driest part of the state. At the
+                other extreme, large sections of the Northern Rockies record annual totals of more than 50 inches (1,250
+                mm) of precipitation, much of it in the form of snow.</p>
+
+            <p class="source">
+                Source:
+                <a href="https://www.britannica.com/place/Idaho/Climate"
+                    target="alt_blank">brittanica.com</a>
+            </p>
+
+        </article>
+    </main>
+
+    <section class="contact">
+        <div class="preston_map"><img src="images/preston_map.png" alt="preston_map"></div>
+
+        <div class="contact_info">
+            <h3>Contact Information</h3>
+            <p>30 N 1st E</p>
+            <p>Preston, ID 83263</p>
+            <br>
+            <p>📱999.999.9999</p>
+            <p>📧idhweathersite@tws.com</p>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="facebook_logo">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="images/twitter.png" alt="twitter_logo">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram.png" alt="instagram_logo">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-information">&copy; <span id="copyrightyear"></span> IDH Weather | David Burguete |
+            Mexico</p>
+        <p class="updated"><span id="lastupdated"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Oswald',
+                    'PT Sans'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

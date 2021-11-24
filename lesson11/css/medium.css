@@ -22,6 +22,20 @@
         margin: 0 auto;
     }
 
+    /* Weather Summary */
+    .hero-image {
+        position: relative;
+
+    }
+    .weather-summary {
+		top: 25px;
+		left: 25px;
+		position: absolute;
+		opacity: 0.85;
+		padding-bottom: 1rem;
+		box-shadow: 0 2.5px 10px 2.5px #00000066;
+	}
+
     /* TOWN INFO */
     .town-data {
         padding: 30px 30px;

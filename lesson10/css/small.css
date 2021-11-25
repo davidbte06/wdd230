@@ -95,8 +95,8 @@ picture img {
 }
 
 #forecast {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-flow: wrap;
     text-align: center;
     background-color: #8ECAE6;
     font-family: 'PT Sans', sans-serif;
@@ -107,40 +107,8 @@ picture img {
     font-size: 15px;
 }
 
-.days:first-child {
-    grid-column: 1/2;
-    border-bottom-style: hidden;
-    border-left-style: hidden;
-    border-top-style: hidden;
-}
-
-.days:nth-child(2) {
-    grid-column: 2/3;
-    border-bottom-style: hidden;
-    border-left-style: hidden;
-    border-top-style: hidden;
-}
-
-.days:nth-child(3) {
-    grid-column: 3/4;
-    border-left-style: hidden;
-    border-bottom-style: hidden;
-    border-right-style: hidden;
-    border-top-style: hidden;
-}
-
-.days:nth-child(4) {
-    grid-column: 4/5;
-    border-bottom-style: hidden;
-    border-right-style: hidden;
-    border-top-style: hidden;
-}
-
-.days:nth-child(5) {
-    grid-column: 5/6;
-    border-bottom-style: hidden;
-    border-right-style: hidden;
-    border-top-style: hidden;
+.day {
+    flex: 1 1 auto;
 }
 
 .weekday {

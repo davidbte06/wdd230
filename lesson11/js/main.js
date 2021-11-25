@@ -20,9 +20,9 @@ function toggleMenu() {
 }
 
 //Preston Weather Summary API
-const weatherapiURL = 'api.openweathermap.org/data/2.5/weather?q=preston&appid=5d043ca924a4acff7edf63dee3eee10d';
+const API = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=5d043ca924a4acff7edf63dee3eee10d';
 
-fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
+fetch(API).then((response) => response.json()).then((jsonObject) => {
 
   const temperature = document.querySelector('.temperature');
   t = jsonObject.main.temp;

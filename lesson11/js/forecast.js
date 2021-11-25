@@ -20,7 +20,7 @@ function CheckDay(day){
 
 //Forecast 5 Days
 
-var forecastAPI = 'api.openweathermap.org/data/2.5/weather?q=preston&appid=5d043ca924a4acff7edf63dee3eee10d';
+var forecastAPI = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&exclude=minutely,hourly,alerts&units=imperial&appid=5d043ca924a4acff7edf63dee3eee10d';
 
 fetch(forecastAPI)
   .then((response) => response.json())

@@ -20,7 +20,7 @@ function toggleMenu() {
 }
 
 // region Preston Weather Summary API
-const weatherapiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=c3affef608fbd43350f108a8f72cddac';
+const weatherapiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=5d043ca924a4acff7edf63dee3eee10d';
 
 fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
 

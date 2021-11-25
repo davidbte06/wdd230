@@ -19,8 +19,8 @@ function toggleMenu() {
   document.querySelector("#menu").classList.toggle("main_menu");
 }
 
-// region Preston Weather Summary API
-const weatherapiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=c3affef608fbd43350f108a8f72cddac';
+//Preston Weather Summary API
+const weatherapiURL = 'api.openweathermap.org/data/2.5/weather?q=preston&appid=5d043ca924a4acff7edf63dee3eee10d';
 
 fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
 
@@ -67,7 +67,7 @@ fetch(urlPreston)
 
   });
 
-// GALLERY 
+// GALLERY
 // Lazy Loading
 const images = document.querySelectorAll('img[data-src]');
 

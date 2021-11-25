@@ -18,9 +18,9 @@ function CheckDay(day){
 
 
 
-//Get the temperatures, icons and description for the next 5 days
+//Forecast 5 Days
 
-var forecastAPI = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&exclude=minutely,hourly,alerts&units=imperial&appid=acc0c305e326e6d9f1226a549bc67124';
+var forecastAPI = 'api.openweathermap.org/data/2.5/weather?q=preston&appid=5d043ca924a4acff7edf63dee3eee10d';
 
 fetch(forecastAPI)
   .then((response) => response.json())
@@ -29,9 +29,9 @@ fetch(forecastAPI)
 
       for (i = 0; i < time.length; i++) {
           const desc = time[i].weather[0].description;
-          document.getElementById("day" + (i+1) + "Temp").textContent = time[i].main.temp.toFixed(1); // temperature
-          document.getElementById("img" + (i+1)).src = "https://openweathermap.org/img/wn/" + time[i].weather[0].icon + '@2x.png'; // icons
-          document.getElementById("img" + (i+1)).setAttribute('alt', desc); // description
+          document.getElementById("day" + (i+1) + "Temp").textContent = time[i].main.temp.toFixed(1);
+          document.getElementById("img" + (i+1)).src = "https://openweathermap.org/img/wn/" + time[i].weather[0].icon + '@2x.png';
+          document.getElementById("img" + (i+1)).setAttribute('alt', desc);
     }
 
 });

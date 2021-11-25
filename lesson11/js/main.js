@@ -19,34 +19,6 @@ function toggleMenu() {
   document.querySelector("#menu").classList.toggle("main_menu");
 }
 
-//Preston Weather Summary API
-const API = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=5d043ca924a4acff7edf63dee3eee10d';
-
-fetch(API).then((response) => response.json()).then((jsonObject) => {
-
-  const temperature = document.querySelector('.temperature');
-  t = jsonObject.main.temp;
-  temperature.textContent = t;
-
-  const currently = document.querySelector('.currently');
-  currently.textContent = jsonObject.weather[0].description;
-
-  const windspeed = document.querySelector('.windspeed');
-  w = jsonObject.wind.speed;
-  windspeed.textContent = w;
-
-  const humidity = document.querySelector('.humidity');
-  humidity.textContent = jsonObject.main.humidity;
-
-  let windchill_factor = 'N/A';
-
-  if ((t <= 50) && (w > 3)) {
-    windchill_factor = `${Math.round(35.74 + (0.6215 * t) - (35.75 * Math.pow(w, 0.16)) + ((0.4275 * t) * Math.pow(w, 0.16)))}&#176;F`;
-  }
-
-  document.querySelector('.windchill').innerHTML = windchill_factor;
-});
-
 // Preston Events
 const urlPreston = 'https://byui-cit230.github.io/weather/data/towndata.json';
 

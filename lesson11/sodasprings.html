@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>IDH Weather | Preston</title>
+    <meta name="description" content="Preston page">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/sodasprings.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="logo_page">
+        </div>
+
+        <div class="heading_preston">
+            <h1>IDH Weather</h1>
+            <h2 class="motto">Knowledge is power</h2>
+        </div>
+    </header>
+    <nav class="navigation">
+        <button onclick="toggleMenu()"> &#9776; Menu</button>
+        <ul id="menu" class="main_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li class="active"><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston, Idaho</h2>
+        <div class="hero-image">
+            <picture>
+                <source media="(min-width: 641px) and (max-width: 1007px)" srcset="images/soda-medium.jpg">
+                <source media="(min-width: 1008px)" srcset="images/soda-large.jpg">
+                <img src="images/soda-small.jpg" alt="Mountains with snow">
+            </picture>
+
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <div class="summary-stats">
+                    <span class="label">Currently: </span>
+                    <span class="currently">Partly Cloudy</span>
+                    <span class="label">Temperature: </span>
+                    <div><span class="temperature"></span>°F</div>
+                    <span class="label">Wind Chill: </span>
+                    <div><span class="windchill"></span></div>
+                    <span class="label">Humidity: </span>
+                    <div><span class="humidity"></span>%</div>
+                    <span class="label">Wind Speed: </span>
+                    <div><span class="windspeed"></span> mph</div>
+                </div>
+            </section>
+        </div>
+
+        <div class="upcoming-events">
+            <h3>Upcoming Events</h3>
+            <p id="sodasprings-events"></p>
+        </div>
+
+        <h2>5-Day Forecast<br></h2>
+        <div id="forecast">
+            <div class="day">
+                <p class="weekday" id="col1"></p>
+                <p class="icon"><img src="images/placeholder.png" alt="" id="img1"></p>
+                <p class="current-temp"><span id="day1"></span> &deg;F</p>
+            </div>
+            <div class="day">
+                <p class="weekday" id="col2"></p>
+                <p class="icon"> <img src="images/placeholder.png" alt="" id="img2"></p>
+                <p class="current-temp"><span id="day2"></span> &deg;F</p>
+            </div>
+            <div class="day">
+                <p class="weekday" id="col3"></p>
+                <p class="icon"> <img src="images/placeholder.png" alt="" id="img3"></p>
+                <p class="current-temp"><span id="day3"></span> &deg;F</p>
+            </div>
+            <div class="day">
+                <p class="weekday" id="col4"></p>
+                <p class="icon"><img src="images/placeholder.png" alt="" id="img4"></p>
+                <p class="current-temp"><span id="day4"></span> &deg;F</p>
+            </div>
+            <div class="day">
+                <p class="weekday" id="col5"></p>
+                <p class="icon"><img src="images/placeholder.png" alt="" id="img5"></p>
+                <p class="current-temp"><span id="day5"></span> &deg;F</p>
+            </div>
+        </div>
+
+
+        <article class="preston-article">
+            <h3>Soda Springs Geyser - Beyond Utah Adventure</h3>
+            <img src="images/soda-article.jpg" alt="Geyser in Soda Springs">
+            <p>Each year it is a family tradition to take a trip to Bear Lake to enjoy many of the outdoor activities in
+                and around the lake. Beside the lake itself, there are many other activities nearby, such as natural
+                caves, high mountain lakes, hot springs, and even a geyser.</p>
+
+            <p>One summer weekend we decided to take a drive from Bear Lake to Lava Hot Springs to enjoy a float on the
+                Portneuf River, and soak in the hot springs afterwards. One of the small towns we passed through on this
+                drive is Soda Springs, Idaho. This town is famous for its hundreds of natural springs that bubble
+                carbonated water to the earths surface, but we had no idea there was a geyser located here as well.</p>
+
+            <p>The Soda Springs Captive Geyser was accidentally created by man. This is not a natural geyser like those
+                found in Yellowstone National Park; nonetheless, this geyser is unique and has some great history tied
+                to it as well.</p>
+
+            <p>In 1937, several local businessmen attempted to divert water from the Pyramid Hot Spring in hopes to
+                create a commercial bathhouse and a tourist attraction. As the drilling reached 315 feet in depth, the
+                drill hit a gas chamber, and shortly afterwards hot water began gushing up the hole and was shooting 40
+                feet in the air.</p>
+
+            <p class="source">
+                Source:
+                <a href="https://www.utahoutdooractivities.com/soda-springs-captive-geyser.html"
+                    target="alt_blank">utahoutdooractivities</a>
+            </p>
+
+        </article>
+
+
+    </main>
+
+    <section class="contact">
+        <div class="preston_map"><img src="images/preston_map.png" alt="preston_map"></div>
+
+        <div class="contact_info">
+            <h3>Contact Information</h3>
+            <p>30 N 1st E</p>
+            <p>Preston, ID 83263</p>
+            <br>
+            <p>999.999.9999</p>
+            <p>idhweathersite@tws.com</p>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="facebook_logo">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="images/twitter.png" alt="twitter_logo">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram.png" alt="instagram_logo">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer-information">&copy; <span id="copyrightyear"></span> IDH Weather | David Burguete |
+            Mexico</p>
+        <p class="updated"><span id="lastupdated"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Oswald',
+                    'PT Sans'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
-// region Preston Weather Summary API
-const weatherapiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=5d043ca924a4acff7edf63dee3eee10d';
+//Preston Weather Summary API
+const weatherapiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=5d043ca924a4acff7edf63dee3eee10d';
 
 fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
 
@@ -49,7 +49,7 @@ function CheckDay(day){
 
 //Forecast 5 days
 
-var forecastAPI = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&exclude=minutely,hourly,alerts&units=imperial&appid=5d043ca924a4acff7edf63dee3eee10d';
+var forecastAPI = 'https://api.openweathermap.org/data/2.5/forecast?id=5607916&exclude=minutely,hourly,alerts&units=imperial&appid=5d043ca924a4acff7edf63dee3eee10d';
 
 fetch(forecastAPI)
   .then((response) => response.json())
@@ -65,3 +65,23 @@ fetch(forecastAPI)
     }
 
 });
+
+// Preston Events
+const urlPreston = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(urlPreston)
+  .then(function (response) {
+    return response.json();
+  })
+
+  .then(function (jsonPreston) {
+
+    const towns = jsonPreston['towns'];
+    const townPreston = towns.filter((towns) => towns.name === 'Preston');
+
+    townPreston.forEach((xPreston) => {
+      document.getElementById('preston-events').innerHTML = `${xPreston.events.join('<br>')}`;
+
+    });
+
+  });

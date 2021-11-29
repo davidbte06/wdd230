@@ -54,3 +54,7 @@ if ('IntersectionObserver' in window) {
   });
 }
 
+//Storm Severity
+function toggleRating(rating) {
+  document.getElementById("value").innerHTML = rating;
+}

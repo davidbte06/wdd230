@@ -63,14 +63,14 @@ fetch(weatherapiURL).then((response) => response.json()).then((jsonObject) => {
 
   const temperature = document.querySelector('.temperature');
   t = jsonObject.main.temp;
-  temperature.textContent = t;
+  temperature.textContent = Math.round(t);
 
   const currently = document.querySelector('.currently');
   currently.textContent = jsonObject.weather[0].description;
 
   const windspeed = document.querySelector('.windspeed');
   w = jsonObject.wind.speed;
-  windspeed.textContent = w;
+  windspeed.textContent = Math.round(w);
 
   const humidity = document.querySelector('.humidity');
   humidity.textContent = jsonObject.main.humidity;

@@ -1,0 +1,339 @@
+:root {
+  --primary-color: #003049;
+  --secundary-color: #D62828;
+  --third-color: #F77F00;
+  --fourth-color: #FCBF49;
+  --white: white;
+  --black: black;
+  --primary-text: 'Quicksand', sans-serif;
+  --footer-text: 'Quicksand', sans-serif;
+  --h1: 'Quicksand', sans-serif;
+  --h2: 'Quicksand', sans-serif;
+  --h2: 'Quicksand', sans-serif;
+  --p: 'PT Sans', sans-serif;
+}
+h2{
+  text-align: center;
+  font-family: var(--primary-text);
+}
+/* Header */
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading_home {
+  color: var(--white);
+  font-family: var(--primary-text);
+}
+
+.motto {
+  font-size: 18px;
+}
+
+.logo img {
+  width: 300px;
+}
+
+/* Navegation */
+nav {
+  text-align: center;
+  padding: 1em;
+  background-color: var(--fourth-color);
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: var(--black);
+  text-decoration: none;
+  font-family: var(--p);
+}
+
+nav button {
+  margin: .2rem 2%;
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul.main_menu {
+  display: none;
+}
+
+.navigation .active a {
+  background-color: var(--third-color);
+  color: var(--black);
+}
+
+.navigation .active a:hover {
+  background-color: var(--third-color);
+  color: var(--white);
+}
+
+/*--- HOME ---*/
+* {
+  box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: var(--p);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  font-family: var(--p);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+/* Goal */
+.porpouse p {
+  font-family: var(--p);
+}
+/* Weather */
+.weather-container-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.col-head {
+  background-color: var(--fourth-color);
+  border-bottom: 3px solid var(--secundary-color);
+  color: var(--secundary-color);
+  display: block;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.weather-info {
+  background-color: var(--secundary-color);
+  padding: 1rem;
+}
+
+.flex-col {
+  border: 2px solid var(--white);
+  color: var(--white);
+  flex: 1 1 auto;
+}
+
+.weather-grid div {
+  background-color: var(--fourth-color);
+  padding: 0.5rem;
+}
+
+.weather-grid {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  box-shadow: 0 2.5px 10px 2.5px #00000066;
+  background: var(--fourth-color);
+  width: 200px;
+  font-family: var(--h2);
+}
+
+.weather-condition {
+  background-color: var(--fourth-color);
+  color: var(--secundary-color);
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  box-shadow: 0 2.5px 10px 2.5px #00000066;
+  font-family: var(--primary-text);
+}
+
+/*Ad*/
+.advertisement {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.col-ad {
+  background-color: var(--fourth-color);
+}
+
+.advertisement section img {
+  width: 100%;
+}
+
+.advertisement-info {
+  border: 1px solid black;
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_info {
+  padding: 5%;
+  text-align: center;
+}
+
+/* Join */
+.image-join {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2.5px 10px 2.5px #00000066;
+  margin-top: 50px;
+  padding: 5rem;
+}
+
+.content-join {
+  flex: 0 0 95%;
+  color: var(--black);
+}
+
+.button {
+  color: var(--white);
+  text-decoration: none;
+  padding: 1rem 3rem;
+  display: inline-block;
+  text-align: center;
+  border: none;
+  display: block;
+  flex: 0 0 100%;
+  background-color: var(--secundary-color);
+  font-family: var(--p);
+}
+
+/* Events */
+.events {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.col-ad {
+  background-color: var(--fourth-color);
+}
+
+.events section img {
+  width: 100%;
+}
+
+.event-info {
+  border: 1px solid black;
+}
+
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 0.5em;
+  font-family: var(--p);
+  background-color: var(--primary-color);
+  color: var(--white);
+}

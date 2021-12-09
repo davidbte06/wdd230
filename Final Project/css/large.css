@@ -1,0 +1,50 @@
+@media only screen and (min-width: 60rem) {
+    nav button {
+        display: none;
+    }
+
+    nav ul.main_menu {
+        display: flex;
+    }
+
+    nav ul {
+        display: flex;
+
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    /*Ad*/
+    .advertisement {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .advertisement section {
+        display: block;
+        padding: 0;
+    }
+
+    /* events */
+    .events {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    .events section {
+        display: block;
+        padding: 0;
+    }
+}

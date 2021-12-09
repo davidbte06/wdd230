@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Home</title>
+    <meta name="description" content="Chamber of Commerce Final Project by David Burguete">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script defer src="js/main.js"></script>
+    <script defer src="js/weather.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo1.png" alt="logo tuxtla Chamber">
+        </div>
+
+        <div class="heading_home">
+            <h1>Tuxtla Chamber</h1>
+            <h2 class="motto">The vision has to be big</h2>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <button onclick="toggleMenu()"> &#9776; Menu</button>
+        <ul id="menu" class="main_menu">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="tuxtla.html">Tuxtla Gutierrez</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="home">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="images/tuxtla1.jpg" style="width:100%">
+                <div class="text">Tuxtla Center</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="images/tuxtla2.jpg" style="width:100%">
+                <div class="text">Caño del Sumidero</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="images/tuxtla3.jpg" style="width:100%">
+                <div class="text">Tuxtla by night</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="porpouse">
+            <h2>Our Goals</h2>
+            <p>Our objective is to create a network of local businesses in the city of tuxtla gutierrez, chiapas. It can
+                be both small and large locals, this could serve both for people who are starting locals and for those
+                people who are looking for locals and can find which ones can meet their needs.</p>
+        </div>
+
+        <section class="weather-container-grid">
+            <section class="weather">
+                <h2>Weather</h2>
+                <div class="weather-grid">
+                    <div class="weather-condition">
+                        <span class="condition"></span>
+                    </div>
+                    <div class="weather-temperature">
+                        <div><span class="temperature"></span>&#176;F</div>
+                        <p>Current Temp</p>
+                    </div>
+                    <div class="weather-humidity">
+                        <div><span class="humidity"></span>%</div>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+            </section>
+            <section class="forecast">
+                <h2>Forecast</h2>
+                <div class="flex"></div>
+            </section>
+        </section>
+
+
+        <div class="advertisement">
+            <section>
+                <img src="images/ahorro.jpg" alt="Farmacias del Ahorro">
+                <div class="advertisement-info">
+                    <h3>Farmacias del Ahorro</h3>
+                    <h4>Te queremos...bien</h4>
+                    <p>Info</p>
+                    <p>Info</p>
+                    <p>Info</p>
+                </div>
+            </section>
+            <section>
+                <img src="images/mandiola.jpg" alt="Ferreteria mandiola">
+                <div class="advertisement-info">
+                    <h3>Ferreteria Mandiola</h3>
+                    <h4>Contigo de principio a fin</h4>
+                    <p>Info</p>
+                    <p>Info</p>
+                    <p>Info</p>
+                </div>
+            </section>
+            <section>
+                <img src="images/chedraui.jpg" alt="Tienda Chedraui">
+                <div class="advertisement-info">
+                    <h3>Chedraui</h3>
+                    <h4>Porque Chedraui cuesta menos</h4>
+                    <p>Info</p>
+                    <p>Info</p>
+                    <p>Info</p>
+                </div>
+            </section>
+
+        </div>
+
+        <section class="image-join">
+            <div class="container content-join">
+                <h2>Join now and become a member</h2>
+                <p>You can also be part of our community, register your small or big store, it doesn't matter, what
+                    matters is your vision.</p>
+                <a href="join.html" class="button">Join Now</a>
+            </div>
+        </section>
+
+        <h2>Upcoming Events</h2>
+        <div class="events">
+            <section>
+                <img src="images/festival-lights.jpg" alt="festival of the lights">
+                <div class="event-info">
+                    <h3>Festival of the Lighs</h3>
+                    <h4>15th December</h4>
+                </div>
+            </section>
+            <section>
+                <img src="images/christmas-eve.jpg" alt="christmas eve">
+                <div class="event-info">
+                    <h3>Christmas Eve</h3>
+                    <h4>24th December</h4>
+                </div>
+            </section>
+            <section>
+                <img src="images/christmas.jpg" alt="christmas">
+                <div class="event-info">
+                    <h3>Christmas</h3>
+                    <h4>25th December</h4>
+                </div>
+            </section>
+
+
+
+    </main>
+
+    <section class="contact">
+        <div class="map" style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no"
+                marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=16.75,%20-93.1167+(Tuxtla%20Gutierrez)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                    href="https://www.gps.ie/car-satnav-gps/">Car Navigation Systems</a></iframe></div>
+
+        <div class="contact_info">
+            <h3>Contact Information</h3>
+            <p>30 N 1st E</p>
+            <p>Tuxtla Gutierrez, Chis</p>
+            <br>
+            <p>📱999.999.9999</p>
+            <p>📧tuxchambers@tws.com</p>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.png" alt="facebook_logo">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="images/twitter.png" alt="twitter_logo">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram.png" alt="instagram_logo">
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p class="footer-information">&copy; <span id="copyrightyear"></span> Tuxtla Chamber | David Burguete |
+            Mexico</p>
+        <p class="updated"><span id="lastupdated"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Quicksands',
+                    'PT Sans'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

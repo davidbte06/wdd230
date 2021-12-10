@@ -47,4 +47,9 @@
         display: block;
         padding: 0;
     }
+
+    /*--JOIN PAGE--*/
+    .membership-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

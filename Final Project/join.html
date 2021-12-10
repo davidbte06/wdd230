@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Tuxtla Chamber | Join</title>
+    <meta name="description" content="~Join Page Tuxtla Chamber">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo1.png" alt="logo tuxtla Chamber">
+        </div>
+
+        <div class="heading_home">
+            <h1>Tuxtla Chamber</h1>
+            <h2 class="motto">The vision has to be big</h2>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <button onclick="toggleMenu()"> &#9776; Menu</button>
+        <ul id="menu" class="main_menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tuxtla.html">Tuxtla Gutierrez</a></li>
+            <li class="active"><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="join">
+        <h2>Membership Levels</h2>
+        <div class="membership-grid">
+            <section class="level">
+                <h3>Non-Profit ($100)</h3>
+                <ul>
+                    <li>Just started your business? This level is perfect for you</li>
+                    <li>You will be able to enter the list of tuxtla chambers locations</li>
+                    <li>Marketing and sponsorship opportunities</li>
+                </ul>
+            </section>
+            <section class="level">
+                <h3>Bronze ($200)</h3>
+                <ul>
+                    <li>You will be able to enter the list of tuxtla chambers locations</li>
+                    <li>Marketing and sponsorship opportunities</li>
+                    <li>Opportunities to participate in local events</li>
+                </ul>
+            </section>
+            <section class="level">
+                <h3>Silver ($400)</h3>
+                <ul>
+                    <li>You will be able to enter the list of tuxtla chambers locations</li>
+                    <li>Marketing and sponsorship opportunities</li>
+                    <li>Opportunities to participate in local events</li>
+                    <li>Part of the chamber of commerce to vote for upcoming events or activities</li>
+                </ul>
+            </section>
+            <section class="level">
+                <h3>Gold ($1000)</h3>
+                <ul>
+                    <li>You will be able to enter the list of tuxtla chambers locations</li>
+                    <li>Marketing and sponsorship opportunities</li>
+                    <li>Opportunities to participate in local events</li>
+                    <li>Part of the chamber of commerce to vote for upcoming events or activities</li>
+                    <li>Courses and workshops to improve the management of your business and grow your business.</li>
+                </ul>
+            </section>
+        </div>
+
+        <form action="thanks.html" method="get">
+            <h2>Join Now!</h2>
+            <fieldset class="personal-info">
+                <label class="box">First Name*<input type="text" name="first-name" pattern="[A-Za-z].{2,}"
+                        required /></label>
+                <label class="box">Last Name*<input type="text" name="last-name" pattern="[A-Za-z].{2,}"
+                        required /></label>
+                <label class="box">Title<input type="text" name="title" /></label>
+
+                <label class="box">Email*<input type="email" name="email" placeholder="davidbte@gmail.com"
+                        required /></label>
+
+                <label class="box">Phone<input type="tel" name="phone"/></label>
+            </fieldset>
+
+            <fieldset class="business-info">
+                <label class="box">Business Name*<input type="text" name="business-name" required /></label>
+                <label class="box">Business Address<input type="text" name="business-address" /></label>
+                <label class="box">Business Website<input type="text" name="business-address" /></label>
+                <label class="box">Business Description
+                    <textarea name="comments" cols="30" rows="10"></textarea>
+                </label>
+                <fieldset>
+                    <label for="membership-level">
+                        <select id="membership-level" name="membership-level" required onchange="selectResponse()">
+                            <option value="" disabled selected>Membership Level</option>
+                            <option value="non-profit">Non-Profit ($100)</option>
+                            <option value="bronze">Bronze ($200)</option>
+                            <option value="silver">Silver ($400)</option>
+                            <option value="gold">Gold ($1000)</option>
+                        </select>
+                    </label>
+                </fieldset>
+            </fieldset>
+            <div id="button">
+                <input type="submit" value="Submit" id="submit" />
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p class="footer-information">&copy; <span id="copyrightyear"></span> Tuxtla Chamber | David Burguete |
+            Mexico</p>
+        <p class="updated"><span id="lastupdated"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Quicksands',
+                    'PT Sans'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

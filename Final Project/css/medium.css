@@ -108,4 +108,8 @@
         text-align: center;
     }
 
+    /*--JOIN PAGE--*/
+    .membership-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }

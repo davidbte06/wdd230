@@ -53,6 +53,15 @@
         grid-template-columns: repeat(4, 1fr);
     }
 
+    /*--DIRECTORY PAGE--*/
+    .grid-layout {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .list-layout .organization-div {
+        grid-template-columns: 2fr 2fr 1.5fr 1fr;
+    }
+
     /*--CONTAC PAGE--*/
     .directors-grid {
         grid-template-columns: 1fr 1fr 1fr;

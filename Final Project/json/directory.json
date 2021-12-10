@@ -2,49 +2,49 @@
     "business": [
         {
             "name": "Farmacias Del Ahorro",
-            "logo": "ahorro1.jpg",
+            "logo": "ahorro1.png",
             "phone": "961-602-6677",
             "address": "5a Nte. Pte. 1062",
             "website": "https://www.fahorro.com/"
         },
         {
             "name": "Ferreteria Madiola",
-            "logo": "madiola1.jpg",
+            "logo": "madiola1.png",
             "phone": "961-602-1544",
             "address": "5a Nte. Pte. 1615-B",
             "website": "https://www.mandiola.com.mx/"
         },
         {
             "name": "Chedraui",
-            "logo": "chedraui1.jpg",
+            "logo": "chedraui1.png",
             "phone": "961-615-0038",
             "address": "Blvd. Belisario Dominguez No. 1691",
             "website": "https://www.chedraui.com.mx/"
         },
         {
             "name": "Soriana",
-            "logo": "soriana.jpg",
+            "logo": "soriana.png",
             "phone": "55-5062-8019",
             "address": "5a. Nte. Pte. 2650",
             "website": "https://www.soriana.com/"
         },
         {
             "name": "Tacos Casa Blanca",
-            "logo": "tacos.jpg",
+            "logo": "tacos.png",
             "phone": "961-618-4865",
             "address": "Blvd Laguitos 3416",
             "website": "https://www.facebook.com/TaquitosCasaBlanca2/"
         },
         {
             "name": "Helados Irma",
-            "logo": "helados.jpg",
+            "logo": "helados.png",
             "phone": "961-618-4555",
             "address": "No. Calle 16 Privada Nte. 416",
             "website": "https://www.facebook.com/HeladosIrmaTap"
         },
         {
             "name": "Autobuses ADO",
-            "logo": "ado.jpg",
+            "logo": "ado.png",
             "phone": "961-125-1585",
             "address": "Los Cafetales, 29030",
             "website": "https://www.clickbus.com.mx/es/ado-tuxtla?gclid=CjwKCAiAksyNBhAPEiwAlDBeLJPNh3G5hefgZXEQpyg9zysPef5K1TAmPOWCbdYngVvZZucMXfZO4RoCC_YQAvD_BwE"

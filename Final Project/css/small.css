@@ -467,7 +467,56 @@ textarea {
 }
 
 /*--DIRECTORY PAGE--*/
+.directory-main{
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
 
+a {
+  color: var(--black);
+  text-decoration: none;
+  font-family: var(--h1);
+}
+.grid-layout {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.grid-button, .list-button {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.list-layout .organization-div {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.list-layout, .list-layout .business-div {
+  padding: 0;
+}
+
+.list-layout .organization-div:nth-child(even) {
+  background-color: var(--white);
+}
+
+.list-layout h3, .list-layout p, .list-layout img {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.organization-div {
+  background-color: var(--fourth-color);
+  margin: 0;
+  padding: 1rem;
+}
+
+.organization-div p {
+  font-family: var(--p);
+}
 
 /*--CONTACT US PAGE--*/
 

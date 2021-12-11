@@ -14,19 +14,28 @@ const directory = 'json/directory.json';
 
 fetch(directory).then((response) => response.json()).then((jsonObject) => {
 
-    //Business
+    //#region Organizations
     Object.keys(jsonObject.business).forEach(i => {
+        console.log(jsonObject.business[i]);
         let div = document.createElement('div');
         div.classList.add('organization-div');
 
         let name = document.createElement('h3');
 
-        if (jsonObject.business[i].logo != "" || jsonObject.business[i].website != undefined) {
+        if (jsonObject.business[i].logo != "") {
             let logo = document.createElement('img');
-            logo.setAttribute('src', jsonObject.business[i].logo);
+            logo.classList.add('directory-logo');
+            logo.setAttribute('src', `images/${jsonObject.business[i].logo}`);
             logo.setAttribute('alt', `${jsonObject.business[i].name} logo`);
+            logo.setAttribute('height', '65');
+            logo.setAttribute('width', '65');
 
             div.appendChild(logo);
+        } else {
+            let placementdiv = document.createElement('div');
+            placementdiv.classList.add('directory-logo');
+
+            div.appendChild(placementdiv);
         }
 
         let address = document.createElement('p');
@@ -35,13 +44,13 @@ fetch(directory).then((response) => response.json()).then((jsonObject) => {
         let phone = document.createElement('p');
         phone.textContent = jsonObject.business[i].phone;
 
-        if (jsonObject.business[i].website != "" || jsonObject.business[i].website != undefined) {
+        if (jsonObject.business[i].website != "") {
             let website = document.createElement('a');
             website.setAttribute('href', jsonObject.business[i].website);
             website.textContent = jsonObject.business[i].name;
 
-            div.appendChild(name);
             name.appendChild(website);
+            div.appendChild(name);
         } else {
             div.appendChild(name);
         }

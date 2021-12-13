@@ -78,6 +78,7 @@
         <form action="thanks.html" method="get">
             <h2>Join Now!</h2>
             <fieldset class="personal-info">
+                <legend>Personal Information</legend>
                 <label class="box">First Name*<input type="text" name="first-name" pattern="[A-Za-z].{2,}"
                         required /></label>
                 <label class="box">Last Name*<input type="text" name="last-name" pattern="[A-Za-z].{2,}"
@@ -87,10 +88,11 @@
                 <label class="box">Email*<input type="email" name="email" placeholder="davidbte@gmail.com"
                         required /></label>
 
-                <label class="box">Phone<input type="tel" name="phone"/></label>
+                <label class="box">Phone<input type="tel" name="phone" /></label>
             </fieldset>
 
             <fieldset class="business-info">
+                <legend>Business Information</legend>
                 <label class="box">Business Name*<input type="text" name="business-name" required /></label>
                 <label class="box">Business Address<input type="text" name="business-address" /></label>
                 <label class="box">Business Website<input type="text" name="business-address" /></label>
@@ -98,6 +100,7 @@
                     <textarea name="comments" cols="30" rows="10"></textarea>
                 </label>
                 <fieldset>
+                    <legend>Membership Level</legend>
                     <label for="membership-level">
                         <select id="membership-level" name="membership-level" required onchange="selectResponse()">
                             <option value="" disabled selected>Membership Level</option>

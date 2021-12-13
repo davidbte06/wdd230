@@ -211,8 +211,7 @@ nav ul.main_menu {
 
 .col-head {
   background-color: var(--fourth-color);
-  border-bottom: 3px solid var(--secundary-color);
-  color: var(--secundary-color);
+  color: var(--black);
   display: block;
   padding: 0.75rem;
   text-align: center;
@@ -246,9 +245,11 @@ nav ul.main_menu {
 
 .weather-condition {
   background-color: var(--fourth-color);
-  color: var(--secundary-color);
+  color: var(--black);
   margin-top: 0.5rem;
   padding: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .flex {
@@ -258,6 +259,19 @@ nav ul.main_menu {
   font-family: var(--primary-text);
 }
 
+.weather-alert {
+  background-color: var(--fourth-color);
+  box-shadow: 0 2.5px 10px 2.5px #00000066;
+}
+
+.weather-alert p {
+  padding: 1rem;
+  font-family: var(--p);
+}
+
+.weather-alert h2 {
+  margin-top: 5px;
+}
 /*Ad*/
 .advertisement {
   text-align: center;
@@ -274,7 +288,9 @@ nav ul.main_menu {
 
 .advertisement-info {
   border: 1px solid black;
+  margin-bottom: 1rem;
 }
+
 
 /* Contact */
 .contact {

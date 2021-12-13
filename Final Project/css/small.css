@@ -346,6 +346,47 @@ footer {
   background-color: var(--primary-color);
   color: var(--white);
 }
+/*--CITY PAGE--*/
+article {
+  background-color: #DDF4F8;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  font-family: var(--p);
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.tuxtla-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.tuxtla-grid div {
+  box-shadow: 0 2.5px 10px 2.5px #00000066;
+  padding: 1rem;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.tuxtla-grid img {
+  height: 368px;
+  width: 368px;
+}
+
 
 /*--JOIN PAGE--*/
 .level {

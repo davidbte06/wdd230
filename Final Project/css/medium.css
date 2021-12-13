@@ -109,6 +109,11 @@
         text-align: center;
     }
 
+    /*--CITY PAGE--*/
+    .tuxtla-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
     /*--JOIN PAGE--*/
     .membership-grid {
         grid-template-columns: 1fr 1fr;
@@ -125,7 +130,7 @@
 
 
     /*--CONTACT PAGE--*/
-    .directors-grid{
+    .directors-grid {
         grid-template-columns: 1fr 1fr;
     }
 }

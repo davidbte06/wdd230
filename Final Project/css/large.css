@@ -48,6 +48,11 @@
         padding: 0;
     }
 
+    /*--CITY PAGE--*/
+    .tuxtla-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     /*--JOIN PAGE--*/
     .membership-grid {
         grid-template-columns: repeat(4, 1fr);

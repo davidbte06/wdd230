@@ -296,10 +296,10 @@ nav ul.main_menu {
 
 
 /* Contact */
-.contact {
+/* .contact {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .contact_info {
   padding: 5%;
@@ -308,6 +308,7 @@ nav ul.main_menu {
 
 .map1 {
   border-radius: 1rem;
+  max-width: 100%;
 }
 
 /* Join */
